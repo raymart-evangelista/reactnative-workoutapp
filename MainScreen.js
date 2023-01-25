@@ -22,6 +22,9 @@ export default class MainScreen extends Component {
   }
 
   render() {
+
+    const styles = this.props.theme
+
     return (
       <View style={styles.container}>
         <View style={styles.dashboardContainer}>
@@ -42,39 +45,3 @@ export default class MainScreen extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  dashboardContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 20,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 18,
-    marginBottom: 10,
-  },
-  workoutData: {
-    fontSize: 14,
-    marginBottom: 10,
-  },
-  startWorkoutButton: {
-    backgroundColor: '#4CAF50',
-    padding: 10,
-    borderRadius: 5,
-  },
-  startWorkoutButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});

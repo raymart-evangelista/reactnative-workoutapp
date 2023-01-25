@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Appearance } from 'react-native';
 import MainScreen from './MainScreen';
 import { useColorScheme } from 'react-native';
+import { lightStyles, darkStyles } from './globalStyles';
 
 export default function App() {
   const [colorScheme, setColorScheme] = useState(Appearance.getColorScheme())
@@ -22,7 +23,7 @@ export default function App() {
 
   return (
     <View style={themeStyles.container}>
-      <MainScreen />
+      <MainScreen theme={themeStyles} />
       <StatusBar />
     </View>
   );
@@ -37,35 +38,4 @@ export default function App() {
 //   },
 // });
 
-const mainColor = '#6a51ae';
-const mainTextColor = '#ffffff';
-const secondaryColor = '#f9a825';
 
-const lightStyles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: mainColor,
-    marginBottom: 10,
-  },
-});
-const darkStyles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'black',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: mainTextColor,
-    marginBottom: 10,
-  },
-});

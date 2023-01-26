@@ -29,7 +29,6 @@ export default class MainScreen extends Component {
       <View style={styles.container}>
         <View style={styles.dashboardContainer}>
           <Text style={styles.title}>{this.state.greeting}, Raymart.</Text>
-          <Text style={styles.title}>You workout programs</Text>
           {/* <Text style={styles.subtitle}>Recent Workouts</Text> */}
           {/* <Text style={styles.workoutData}>Workouts Completed: 5</Text>
           <Text style={styles.workoutData}>Total Distance: 10km</Text>
@@ -40,7 +39,7 @@ export default class MainScreen extends Component {
           style={styles.startWorkoutButton}
           onPress={() => this.props.navigation.navigate('ExistingProgram')}
         >
-          <Text style={styles.startWorkoutButtonText}>Existing Programs</Text>
+          <Text style={styles.startWorkoutButtonText}>Choose existing program</Text>
 
         </TouchableOpacity>
 
@@ -49,16 +48,16 @@ export default class MainScreen extends Component {
           style={styles.startWorkoutButton}
           onPress={() => this.props.navigation.navigate('NewProgram')}
         >
-          <Text style={styles.startWorkoutButtonText}>Create program</Text>
+          <Text style={styles.startWorkoutButtonText}>Create new program</Text>
 
         </TouchableOpacity>
 
-        {/* <TouchableOpacity 
-          style={styles.startWorkoutButton}
-          onPress={() => this.props.navigation.navigate('NewWorkout')}
+        <TouchableOpacity
+          style={styles.logoutButton}
+          onPress={() => this.props.navigation.navigate('LogoutButton')}
         >
-            <Text style={styles.startWorkoutButtonText}>Start Workout</Text>
-        </TouchableOpacity> */}
+          <Text style={styles.logoutButtonText}>Logout</Text>
+        </TouchableOpacity>
       </View>
     );
   }

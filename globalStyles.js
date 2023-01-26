@@ -32,14 +32,28 @@ const lightStyles = StyleSheet.create({
   },
   startWorkoutButton: {
     backgroundColor: '#4CAF50',
+    color: mainTextColor,
     padding: 10,
     borderRadius: 5,
+    marginBottom: 30,
   },
   startWorkoutButtonText: {
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  logoutButton: {
+    backgroundColor: '#ff4d4d',
+    color: mainTextColor,
+    padding: 10,
+    borderRadius: 5,
+    marginBottom: 30,
+  },
+  logoutButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  }
 });
 const darkStyles = StyleSheet.create({
   container: {
@@ -75,12 +89,25 @@ const darkStyles = StyleSheet.create({
     color: mainTextColor,
     padding: 10,
     borderRadius: 5,
+    marginBottom: 30,
   },
   startWorkoutButtonText: {
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  logoutButton: {
+    backgroundColor: '#ff4d4d',
+    color: mainTextColor,
+    padding: 10,
+    borderRadius: 5,
+    marginBottom: 30,
+  },
+  logoutButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  }
 });
 
 export { lightStyles, darkStyles}

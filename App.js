@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Appearance } from 'react-native';
-import MainScreen from './MainScreen';
+import MainScreen from './MainLoggedIn';
 import { useColorScheme } from 'react-native';
 import { lightStyles, darkStyles } from './globalStyles';
 

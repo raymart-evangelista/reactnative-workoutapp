@@ -5,6 +5,7 @@ import { Appearance } from 'react-native';
 import MainScreen from './MainLoggedIn';
 import { useColorScheme } from 'react-native';
 import { lightStyles, darkStyles } from './globalStyles';
+import MainLoggedOut from './MainLoggedOut';
 
 export default function App() {
   const [colorScheme, setColorScheme] = useState(Appearance.getColorScheme())
@@ -23,7 +24,8 @@ export default function App() {
 
   return (
     <View style={themeStyles.container}>
-      <MainScreen theme={themeStyles} />
+      {/* <MainScreen theme={themeStyles} /> */}
+      <MainLoggedOut />
       <StatusBar />
     </View>
   );
